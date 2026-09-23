@@ -1,1 +1,67 @@
+print("Algebra & Calculus 1 - Using Math Module")
+print("""
+1. Solve a linear equation (ax + b = c)
+2. Solve Quadratic Equation (ax^2 + bx + c = 0)
+3. Evaluate f(x) = ax^2 + bx + c
+4. Find the derivative of f(x) at a point
+5. Estimate a limit as x approaches a value
+6. Compute a definite integral of f(x)
+7. Exit
+""")
+solver = input("Enter a number: ").strip()
 
+if solver == "1":
+      a = int(input("Enter the Value of A:"))
+      b = int(input("Enter the Value of B:"))
+      c = int(input("Enter the Value of C:"))
+      print((c-b)/a)
+
+elif solver =="2":
+      a = int(input("Enter the Value of A:"))
+      b = int(input("Enter the Value of B:"))
+      c = int(input("Enter the Value of C:"))
+      print((-b+((b**2)-4*a*c)**0.5)/2*a)
+      print((-b-((b**2)-4*a*c)**0.5)/2*a)
+
+elif solver =="3":
+      a = int(input("Enter the Value of A:"))
+      b = int(input("Enter the Value of B:"))
+      c = int(input("Enter the Value of C:"))
+      x = int(input("Enter the Value of X in f(x):"))
+      print("f(x) is:")
+      print(a*(x**2)+b*x+c)
+
+elif solver =="4":
+      a = int(input("Enter an Coefficient:"))
+      b = int(input("Enter an Exponent:"))
+      if b == "1":
+        print(a)
+      else:
+        print((a*b),"x","^",(b-1))
+
+elif solver =="5":
+      a = float(input("Enter the Value of A:"))
+      b = float(input("Enter the Value of B:"))
+      c = float(input("Enter the Value of C:"))
+      x = float(input("Enter the Value of X in f(x):"))
+      print("f(x) is:")
+      print(a*(x**2)+b*x+c)
+      
+      
+elif solver =="6":
+      a = int(input("Enter an Coefficient:"))
+      b = int(input("Enter an Exponent:"))
+  print(a/(b+1),"x","^",(b+1),"+ C")
+
+elif solver == "7":
+      print("Evicting the program.")
+        
+else:
+      print("Invalid choice. Please enter a number between 1 - 7.")
+
+
+
+
+
+
+    
