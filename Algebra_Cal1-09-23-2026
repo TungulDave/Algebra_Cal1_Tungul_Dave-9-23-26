@@ -39,29 +39,24 @@ elif solver =="4":
       else:
         print((a*b),"x","^",(b-1))
 
-elif solver =="5":
-      a = float(input("Enter the Value of A:"))
-      b = float(input("Enter the Value of B:"))
-      c = float(input("Enter the Value of C:"))
-      x = float(input("Enter the Value of X in f(x):"))
-      print("f(x) is:")
-      print(a*(x**2)+b*x+c)
+elif solver == "5":
+    a = float(input("Enter the Value of A:"))
+    b = float(input("Enter the Value of B:"))
+    c = float(input("Enter the Value of C:"))
+    x = float(input("Enter the Value of X:"))
+    print("Left-hand Limit:", a * ((x - 0.00001) ** 2) + b * (x - 0.00001) + c)
+    print("Right-hand Limit:", a * ((x + 0.00001) ** 2) + b * (x + 0.00001) + c)
+    print("True Limit:", a * (x ** 2) + b * x + c)
       
       
 elif solver =="6":
       a = int(input("Enter an Coefficient:"))
       b = int(input("Enter an Exponent:"))
-  print(a/(b+1),"x","^",(b+1),"+ C")
+      print(a/(b+1),"x","^",(b+1),"+ C")
 
 elif solver == "7":
-      print("Evicting the program.")
+      print("Removing The Program From This World.")
         
 else:
-      print("Invalid choice. Please enter a number between 1 - 7.")
-
-
-
-
-
-
-    
+      print("Are you serious there only number 1-7 options")
+  
